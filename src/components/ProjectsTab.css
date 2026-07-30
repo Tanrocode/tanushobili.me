@@ -1,0 +1,122 @@
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.project-card:hover {
+  border-color: var(--border-hover);
+}
+
+.project-card__shot {
+  flex: 1 1 250px;
+  min-width: 230px;
+  height: 186px;
+  background: var(--bg);
+  border: 1px solid var(--border-structural);
+  border-radius: 11px;
+  padding: 5px;
+}
+
+.project-card__body {
+  flex: 1 1 280px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 14px 12px 6px;
+}
+
+.project-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.project-card__title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.project-card__link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: 9px;
+  background: #111a30;
+  border: 1px solid var(--border-hover);
+  font-size: 14px;
+  color: #a9b8d8;
+}
+
+.project-card__link:hover {
+  color: var(--text-heading);
+}
+
+.project-card__static-tag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: 9px;
+  background: var(--surface-1);
+  border: 1px solid var(--border-card);
+  font-size: 14px;
+  color: var(--text-body);
+}
+
+.project-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-wrap: wrap;
+  padding: 11px 0;
+  border-top: 1px solid var(--border-card-alt);
+  border-bottom: 1px solid var(--border-card-alt);
+}
+
+.project-card__meta-item {
+  font-size: 14px;
+  color: var(--text-body);
+}
+
+.project-card__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #3c4a6d;
+}
+
+.project-card__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.project-card__source {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-muted);
+}
+
+.project-card__source:hover {
+  color: var(--accent);
+}

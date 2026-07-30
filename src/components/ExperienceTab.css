@@ -1,0 +1,13 @@
+.experience-coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border: 1px dashed var(--border-hover);
+  border-radius: 14px;
+  background: var(--surface-1);
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-body);
+}

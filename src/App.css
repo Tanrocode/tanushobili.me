@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.page__main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page__content {
+  width: min(920px, 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding: 10px 6px 80px;
+}
+
+.page__route {
+  flex: 1 1 auto;
+}
