@@ -1,33 +1,30 @@
+import { ImageSlot } from './ImageSlot';
 import './ExperienceContent.css';
 
-/**
- * Real experience content — layout/copy still undecided, so this isn't
- * rendered in production yet (see ExperienceTab.tsx). Kept here, fully
- * written, to drop back in once the final layout is picked.
- */
 export function ExperienceContent() {
   return (
     <div className="experience-list">
       <article className="experience-card">
         <div className="experience-card__head">
           <div className="experience-card__identity">
-            <span className="experience-card__avatar">S</span>
+            <div className="experience-card__avatar">
+              <ImageSlot src="/images/fav-spolm.png" alt="Spolm favicon" placeholder="S" radius={11} />
+            </div>
             <div className="experience-card__title-group">
               <span className="experience-card__title">Spolm</span>
               <a href="https://tryspolm.com" target="_blank" rel="noopener noreferrer" className="experience-card__link">
-                tryspolm.com
+                Demo
               </a>
             </div>
-            <span className="experience-card__tag">Open source</span>
           </div>
-          <span className="experience-card__meta">2025 — Present</span>
+        </div>
+        <div className="experience-card__shot">
+          <ImageSlot src="/images/exp-spolm.png" alt="Spolm demo" placeholder="Spolm demo" radius={8} />
         </div>
         <div className="experience-card__panel">
-          <span className="experience-card__role">Creator &amp; maintainer</span>
           <span className="experience-card__desc">
-            Built a self-learning memory layer for AI agents: LLM memory extraction, embedding-based dedup, and
-            similarity × confidence × recency retrieval over Neo4j. Shipped as <code>spolm</code> on PyPI and{' '}
-            <code>@spolm/tracer</code> on npm, plus a hosted dashboard.
+            SDK-based observability and memory suite for AI agents. Equip with agentic trace logging and analysis, automated GitHub PR fixes, and
+            confidence-based persistent memory over Neo4j.
           </span>
         </div>
       </article>
@@ -35,30 +32,54 @@ export function ExperienceContent() {
       <article className="experience-card">
         <div className="experience-card__head">
           <div className="experience-card__identity">
-            <span className="experience-card__avatar">B</span>
-            <div className="experience-card__title-group">
-              <span className="experience-card__title">UC Berkeley</span>
-              <span className="experience-card__link experience-card__link--static">berkeley.edu</span>
+            <div className="experience-card__avatar">
+              <ImageSlot src="/images/fav-talkode.png" alt="Talkode favicon" placeholder="T" radius={11} />
             </div>
-            <span className="experience-card__tag">Education</span>
+            <div className="experience-card__title-group">
+              <span className="experience-card__title">Talkode</span>
+              <a href="https://talkode.netlify.app/" target="_blank" rel="noopener noreferrer" className="experience-card__link">
+                Demo
+              </a>
+            </div>
           </div>
-          <span className="experience-card__meta">Undergraduate</span>
+        </div>
+        <div className="experience-card__shot">
+          <ImageSlot src="/images/exp-talkode.png" alt="Talkode demo" placeholder="Talkode demo" radius={8} />
         </div>
         <div className="experience-card__panel">
-          <span className="experience-card__role">Computer Science</span>
           <span className="experience-card__desc">
-            Coursework across systems, algorithms, and machine learning — and a lot of time spent building outside
-            of it.
+            Voice-first online assessment platform for HR teams, with an interviewer developed to act like a senior developer walking candidates through messy codebases, offering sub-1s response times and post-interview insights for HR. 
           </span>
         </div>
       </article>
 
-      <article className="experience-card experience-card--placeholder">
-        <span className="experience-card__placeholder-title">Slot for your internship / research role</span>
-        <span className="experience-card__placeholder-desc">
-          Send me the company, title, dates, and a line about what you shipped and I'll drop it in as a real card —
-          or edit this one directly.
-        </span>
+      <article className="experience-card">
+        <div className="experience-card__head">
+          <div className="experience-card__identity">
+            <div className="experience-card__avatar">
+              <ImageSlot src="/images/fav-calendio.png" alt="Calendio favicon" placeholder="C" radius={11} />
+            </div>
+            <div className="experience-card__title-group">
+              <span className="experience-card__title">Calendio</span>
+              <a
+                href="https://trycalendio.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="experience-card__link"
+              >
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="experience-card__shot">
+          <ImageSlot src="/images/exp-calendio.jpg" alt="Calendio demo" placeholder="Calendio demo" radius={8} />
+        </div>
+        <div className="experience-card__panel">
+          <span className="experience-card__desc">
+            CRM agent ecosystem for small businesses. Answers inbound calls, integrates into business tools (Google, Slack, etc), and captures caller info.
+          </span>
+        </div>
       </article>
     </div>
   );

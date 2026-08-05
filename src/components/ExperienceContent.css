@@ -1,17 +1,17 @@
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
 }
 
 .experience-card {
   background: var(--surface-2);
   border: 1px solid var(--border-card);
   border-radius: 14px;
-  padding: 22px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 22px;
 }
 
 .experience-card__head {
@@ -35,13 +35,7 @@
   border-radius: 11px;
   background: #111a30;
   border: 1px solid var(--border-hover);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-sans);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--accent);
+  overflow: hidden;
 }
 
 .experience-card__title-group {
@@ -66,39 +60,26 @@
   color: var(--accent);
 }
 
-.experience-card__link--static:hover {
-  color: var(--text-body);
+.experience-card__shot {
+  height: 240px;
+  background: var(--bg);
+  border: 1px solid var(--border-structural);
+  border-radius: 12px;
+  padding: 5px;
 }
 
-.experience-card__tag {
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--surface-1);
-  border: 1px solid var(--border-card);
-  font-size: 13px;
-  color: var(--text-body);
-}
-
-.experience-card__meta {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  color: var(--text-muted);
+.experience-card__shot .image-slot {
+  object-position: top;
 }
 
 .experience-card__panel {
   background: var(--bg);
   border: 1px solid var(--border-structural);
   border-radius: 12px;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-}
-
-.experience-card__role {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text-card-title);
+  gap: 8px;
 }
 
 .experience-card__desc {
@@ -111,23 +92,4 @@
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--accent-light-alt);
-}
-
-.experience-card--placeholder {
-  background: var(--surface-1);
-  border: 1px dashed #24325a;
-  gap: 8px;
-}
-
-.experience-card__placeholder-title {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--accent);
-}
-
-.experience-card__placeholder-desc {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #7c8aa8;
 }

@@ -3,7 +3,7 @@ import './Sidebar.css';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Intro' },
-  { to: '/experience', label: 'Experience' },
+  { to: '/work', label: 'Work' },
 ];
 
 export function Sidebar() {

@@ -1,6 +1,7 @@
 import { Reveal } from './Reveal';
 import { ImageSlot } from './ImageSlot';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 export function Hero() {
   return (
@@ -22,7 +23,11 @@ export function Hero() {
             <p>
               I'm always a fan of exploring something I don't know. Naturally, that led me to the ever-evolving
               field of AI and software engineering. I found myself immersed in a variety of different areas of
-              tech, whether it be agent infrastructure or full-stack ML.
+              tech, whether it be agent infrastructure or full-stack ML. You can check my work{' '}
+              <Link to="/work" className="hero__email-link">
+                here
+              </Link>
+              .
             </p>
             <p>
               Outside developing, I'm usually trying viral protein recipes, finding new spots in the Bay to
